@@ -12,7 +12,7 @@
       <div class="zy-main">
         <!-- 路由出口 -->
         <!-- 路由匹配到的组件将渲染在这里 -->
-        <router-view name="main"></router-view>
+        <router-view></router-view>
       </div>
   </div>
 </template>
@@ -74,6 +74,10 @@ export default {
         {
           title: '促销管理',
           subnavs: [
+            {title: '同购规则', router: '/'},
+            {title: '销售规则', router: '/'},
+            {title: '积分规则', router: '/'},
+            {title: '优惠券管理', router: '/promotion/coupon'}
           ]
         }
       ]
@@ -100,5 +104,6 @@ export default {
 .zy-main {
   margin-top: 60px;
   margin-left: 200px;
+  padding: 20px;
 }
 </style>

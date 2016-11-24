@@ -25,7 +25,6 @@ export default {
   -webkit-box-shadow:none;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 
 body {
@@ -44,5 +43,13 @@ li {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.width-full {
+  width: 100% !important;
+}
+
+.align-center {
+  text-align: center;
 }
 </style>

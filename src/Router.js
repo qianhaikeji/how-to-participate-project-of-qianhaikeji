@@ -14,6 +14,10 @@ import GoodAttrProfile from './views/good/goodAttr/GoodAttrProfile'
 import OrderList from './views/order/OrderList'
 import OrderProfile from './views/order/OrderProfile'
 
+import CouponList from './views/promotion/coupon/CouponList'
+import CouponProfile from './views/promotion/coupon/CouponProfile'
+import CouponNew from './views/promotion/coupon/CouponNew'
+
 const routers = new VueRouter({
   mode: 'history',
   base: __dirname,
@@ -27,57 +31,60 @@ const routers = new VueRouter({
         footer: Footer
       },
       children: [
-        { path: 'good',
-          name: '商品管理',
-          children: [
-            { path: '',
-              name: '商品列表',
-              components: {main: GoodList}
-            },
-            { path: ':gid',
-              name: '商品详情',
-              components: {main: GoodProfile}
-            },
-            { path: 'goodType',
-              name: '分类管理',
-              children: [
-                { path: '',
-                  name: '商品分类列表',
-                  components: {main: GoodTypeList}
-                },
-                { path: ':tid',
-                  name: '商品分类详情',
-                  components: {main: GoodTypeProfile}
-                }
-              ]
-            },
-            { path: 'goodAttr',
-              name: '类型管理',
-              children: [
-                { path: '',
-                  name: '商品类型列表',
-                  components: {main: GoodAttrList}
-                },
-                { path: ':tid',
-                  name: '商品类型详情',
-                  components: {main: GoodAttrProfile}
-                }
-              ]
-            }
-          ]
+        {
+          path: 'good',
+          name: '商品列表',
+          component: GoodList
         },
-        { path: 'order',
-          name: '订单管理',
-          children: [
-            { path: '',
-              name: '订单列表',
-              components: {main: OrderList}
-            },
-            { path: ':oid',
-              name: '订单详情',
-              components: {main: OrderProfile}
-            }
-          ]
+        {
+          path: 'good/:gid',
+          name: '商品详情',
+          component: GoodProfile
+        },
+        {
+          path: 'goodType',
+          name: '商品分类列表',
+          component: GoodTypeList
+        },
+        {
+          path: 'goodType/:tid',
+          name: '商品分类详情',
+          component: GoodTypeProfile
+        },
+        {
+          path: 'goodAttr',
+          name: '商品类型列表',
+          component: GoodAttrList
+        },
+        {
+          path: 'goodAttr/:tid',
+          name: '商品类型详情',
+          component: GoodAttrProfile
+        },
+        {
+          path: 'order',
+          name: '订单列表',
+          component: OrderList
+        },
+        {
+          path: 'order/:rid',
+          name: '订单详情',
+          component: OrderProfile
+        },
+        {
+          path: 'promotion/coupon',
+          name: '促销管理-优惠券列表',
+          component: CouponList
+        },
+        {
+          path: 'promotion/coupon/new',
+          name: '促销管理-添加优惠券',
+          component: CouponNew
+        },
+        {
+          path: 'promotion/coupon/:cid',
+          name: '促销管理-优惠券详情',
+          component: CouponProfile
         }
       ]
     }
