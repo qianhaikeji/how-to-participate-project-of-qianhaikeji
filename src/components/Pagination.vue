@@ -23,6 +23,12 @@ export default {
     }
   },
   methods: {
+    reset: function () {
+      this.pageSize = 0
+      this.page = 1
+      this.total = 0
+      this.fetchDataByPage()
+    },
     fetchDataByPage: function () {
       let pageParams = {
         offset: this.page - 1,

@@ -74,9 +74,9 @@ export default {
         {
           title: '促销管理',
           subnavs: [
-            {title: '同购规则', router: '/'},
-            {title: '销售规则', router: '/'},
-            {title: '积分规则', router: '/'},
+            {title: '同购规则', router: '/promotion/jointBuy'},
+            {title: '销售规则', router: '/promotion/sale'},
+            {title: '积分规则', router: '/promotion/point'},
             {title: '优惠券管理', router: '/promotion/coupon'}
           ]
         }

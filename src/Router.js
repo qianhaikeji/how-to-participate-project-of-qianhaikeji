@@ -14,9 +14,11 @@ import GoodAttrProfile from './views/good/goodAttr/GoodAttrProfile'
 import OrderList from './views/order/OrderList'
 import OrderProfile from './views/order/OrderProfile'
 
-import CouponList from './views/promotion/coupon/CouponList'
-import CouponProfile from './views/promotion/coupon/CouponProfile'
-import CouponNew from './views/promotion/coupon/CouponNew'
+import PromotionCouponList from './views/promotion/coupon/CouponList'
+import PromotionCouponNew from './views/promotion/coupon/CouponNew'
+import PromotionJointBuy from './views/promotion/JointBuy'
+import PromotionSale from './views/promotion/Sale'
+import PromotionPoint from './views/promotion/Point'
 
 const routers = new VueRouter({
   mode: 'history',
@@ -72,20 +74,35 @@ const routers = new VueRouter({
           component: OrderProfile
         },
         {
+          path: 'promotion/jointBuy',
+          name: '促销管理-同购管理',
+          component: PromotionJointBuy
+        },
+        {
+          path: 'promotion/sale',
+          name: '促销管理-销售管理',
+          component: PromotionSale
+        },
+        {
+          path: 'promotion/point',
+          name: '促销管理-积分管理',
+          component: PromotionPoint
+        },
+        {
           path: 'promotion/coupon',
           name: '促销管理-优惠券列表',
-          component: CouponList
+          component: PromotionCouponList
         },
         {
           path: 'promotion/coupon/new',
           name: '促销管理-添加优惠券',
-          component: CouponNew
-        },
-        {
-          path: 'promotion/coupon/:cid',
-          name: '促销管理-优惠券详情',
-          component: CouponProfile
+          component: PromotionCouponNew
         }
+        // {
+        //   path: 'promotion/coupon/:cid',
+        //   name: '促销管理-优惠券详情',
+        //   component: CouponProfile
+        // },
       ]
     }
   ]
