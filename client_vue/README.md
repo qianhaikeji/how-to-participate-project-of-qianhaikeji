@@ -61,7 +61,7 @@
 
 **http请求**。参考[vue-resource](https://github.com/pagekit/vue-resource/tree/master/docs)文档。结合postman接口文档（不开源，请私下索要，望见谅），理解本项目对于后端请求的封装`src/services/DataService.js`
 
-**前端库element**。参考[element](http://element.eleme.io/#/zh-CN)文档。明确element提供哪些组件，并能在需要的时候独立使用。
+**前端库element/mint UI**。PC开发参考[element](http://element.eleme.io/#/zh-CN),移动端开发参考[mint UI](http://mint-ui.github.io/#!/zh-cn)文档。明确element/mint UI提供哪些组件，并能在需要的时候独立使用。
 
 **目录结构，代码组织方式**。理解`src`中每个目录的组织逻辑及风格。
 
