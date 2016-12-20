@@ -125,7 +125,7 @@ story board是用来做需求公示。方便成员之间互相了解大家手上
 ####合作方式
 请联系微信tx01020304，加时请注明在XX上看到的  
 希望可以提供过往简历或者相关经验证明(在线项目地址，git账号等)，如有简历，可发送到邮箱service@qianhaikeji.cn  
-https://git.coding.net/benbenshi/vue-mobile-test.git   
+在https://git.coding.net/benbenshi/jsyj-client-test.git 
 将上面代码clone 下来,运行起来之后请提供您的trello，coding账号,我们加您进项目组。
 有的模块已经在开发中了,您可以从中挑一个觉得容易上手，或者功能相对独立的,或体现您的水平的模块开发。
 fork一个分支,提交代码后,如符合双方预期，我们和您商定每人天的具体价格(见报酬标准),
