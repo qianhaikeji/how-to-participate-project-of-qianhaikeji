@@ -122,9 +122,9 @@ story board是用来做需求公示。方便成员之间互相了解大家手上
 高质量完成任务，我们会在合作一定时间后，进行评估，提升你的单位时间报酬。
 
 ####合作方式
-#####请联系微信tx01020304，加时请注明通过什么了解到我们的
+#####请联系微信bdalbbtx，加时请注明通过什么了解到我们的
 希望可以提供过往简历或者相关经验证明(在线项目地址，git账号等)，如有简历，可发送到邮箱service@qianhaikeji.cn 
-在https://git.coding.net/benbenshi/jsyj-client-test.git 
+在https://github.com/qianhaikeji/vue_admin_demo
 将上面代码clone下来,运行起来之后请提供您的trello，https://code.aliyun.com/账号,我们加您进项目组。
 有的模块已经在开发中了,您可以从中挑一个觉得容易上手，或者功能相对独立的,或体现您的水平的模块开发。
 fork一个分支,提交代码后,如符合双方预期，我们和您商定每人天的具体价格(见报酬标准),
